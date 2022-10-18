@@ -1,13 +1,238 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Roboto', sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    
+}
+
+.flex-left,
+.flex-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.desc-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-between;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.carousel img {
+    width: 500px;
+    height: auto;
+
+   
+}
+
+.showModal {
+    transition: all 0.4s ease-in-out;
+}
+
+.carousel.showModal {
+    opacity: 0.3;
+}
+
+
+.desc {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.counter {
+    /* width: 100%;
+    max-width: 500px; */
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    
+}
+
+.counter-output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-output button {
+    height: 60px;
+    background-color: #fff;
+    border: thin solid transparent;
+}
+    
+    
+
+.item-output {
+    position: absolute;
+    margin-left: 6px;
+    margin-top: -12px;
+    font-size: 16px;
+    background-color: #fe8019;
+    color: #fff;
+    z-index: 1;
+    width: 30px;
+    height: auto;
+    border-radius: 40px;
+    text-align: center;
+    
+    
+}
+
+
+.cart-modal,
+.empty-Cart {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin:  0 auto;
+    border: thin solid rgba(0,0, 0, 0.6);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.empty-Cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.checkout-Btn,
+.addBtn {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    height: 60px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: #fe8019;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    margin-top: 25px;
+    
+    
+}
+
+.addBtn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.checkout-Btn button {
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: #fe8019;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.addBtn  {
+    width: 100%;
+    max-width: 500px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.addBtn button {
+    border-color: transparent;
+    background-color: #fe8019;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px;
+}
+
+.checkout-Btn:hover,
+.addBtn:hover {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
+.menu {
+    position: absolute;
+   width: 100%;
+   max-width: 400px;
+    
+    background-color: #fe8019;
+}
+
+.control-Btn  {
+    width: 50px;
+    font-size:32px; 
+    color: #fe8019; 
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+    
