@@ -71,9 +71,15 @@ header {
     transition: all 0.4s ease-in-out;
 }
 
-.carousel.showModal {
+.carousel.showModal,
+.desc.showModal,
+.counter.showModal {
     opacity: 0.3;
+    
+    transition: all 0.4s ease-in-out;
 }
+
+
 
 
 .desc {
@@ -96,10 +102,7 @@ header {
     
 }
 
-
 .counter {
-    /* width: 100%;
-    max-width: 500px; */
     margin: auto;
     text-align: center;
     padding-bottom: 50px;
@@ -123,7 +126,7 @@ header {
 .item-output {
     position: absolute;
     margin-left: 6px;
-    margin-top: -12px;
+    margin-top: -9px;
     font-size: 16px;
     background-color: #fe8019;
     color: #fff;
@@ -132,8 +135,6 @@ header {
     height: auto;
     border-radius: 40px;
     text-align: center;
-    
-    
 }
 
 
@@ -208,7 +209,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     font-size: 1rem;
     cursor: pointer;
 }
@@ -226,18 +226,13 @@ header {
 .checkout-Btn:hover,
 .addBtn:hover {
     transform: scale(0.98);
-    opacity: 0.8;
-}
-
-.cart-image {
-
+    
 }
 
 .menu {
     position: absolute;
-   width: 100%;
-   max-width: 400px;
-    
+    width: 100%;
+    max-width: 400px;
     background-color: #fe8019;
 }
 
