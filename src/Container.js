@@ -114,7 +114,8 @@ export default function Hero() {
                                 height='20'
                                 style={{
                                 cursor:'pointer', 
-                                position: 'relative'
+                                position: 'relative',
+                                marginRight: '20px'
                                 }} 
                                 onClick={handleCart} 
                                 src={cart}/>
@@ -197,7 +198,7 @@ export default function Hero() {
 
         {/* PRODUCT DESCRIPTION SECTION */}
         <div>
-        <div className='desc'>
+        <div className={`desc ${showModal ? "showModal" : ""}`}>
             <h3 style={spanStyle}>SNEAKER COMPANY</h3>
             <h1 style={{width:'100%', maxWidth:'400px', paddingTop:'15px'}}>Fall Limited Edition Sneakers</h1>
             <p style={{
@@ -225,7 +226,7 @@ export default function Hero() {
         
         {/* COUNTER SECTION */}
         
-        <div className='counter'>
+        <div className={`counter ${showModal ? "showModal" : ""}`}>
         
             <div className='counter-output'>
                 <button style={{backgroundColor: '#f6f8fa'}} onClick={handleMinus} className='control-Btn'>-</button>
