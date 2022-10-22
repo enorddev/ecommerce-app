@@ -1,4 +1,4 @@
-# Ecommerce App
+# React Ecommerce App
 
 This ecommerce page app was used to practice React concepts like state, props, useffect, ternary operator & hooks. It also allowed me to practice some CSS and Javascript concepts.
 
