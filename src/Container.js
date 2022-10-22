@@ -9,6 +9,8 @@ import logo from './images/logo.svg';
 import deleteBtn from './images/icon-delete.svg';
 import buttonCart from './images/icon-cart.svg';
 import * as ReactBootStrap from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 
 
@@ -52,25 +54,29 @@ export default function Hero() {
         }
     }
 
-   
+    const [show, setShow] = useState(false);
+    // const [continueShop, setContinueShop] = useState(false)
 
-           
-              
+    const handleClose = () => {
+        return (
+            setShow(false),
+            setShowModal(false),
+            setCartOutput(0),
+            setOutput(0)
+        )
+        
+        }
+    const handleShow = () => setShow(true);
+
+    const handleContinue = () => setShow(false); 
+        
     
-            
-                
-                
-            
-            
-            
-
-
     const spanStyle = {
         color: '#fe8019',
         fontWeight:'600',
       }
     
-      const priceFlex = {
+    const priceFlex = {
         display: 'flex',
         alignItems: 'center',
         gap: '20px'
@@ -161,8 +167,32 @@ export default function Hero() {
                             <img onClick={handleDelete} src={deleteBtn}/>
                         </div>
                             <div className='checkout-Btn'>
-                                <button >Checkout</button>
+                                <button onClick={handleShow}>Checkout</button>
                             </div>
+
+                            <ReactBootStrap.Modal
+                                show={show}
+                                onHide={handleClose}
+                                backdrop="static"
+                                keyboard={false}>
+                                <ReactBootStrap.Modal.Header closeButton>
+                                    <ReactBootStrap.Modal.Title>Thank you for your order</ReactBootStrap.Modal.Title>
+                                </ReactBootStrap.Modal.Header>
+                                <ReactBootStrap.Modal.Body>
+                                    Total : <strong>${totalPrice}.00</strong> <br/>
+                                    Order number is: <strong>000-000-001</strong>
+                                </ReactBootStrap.Modal.Body>
+                                <ReactBootStrap.Modal.Footer>
+                                    <div className='close-btn'>
+                                    
+                                        <button onClick={handleClose}>Close</button>
+                                        <button onClick={handleContinue}>Continue shopping</button>
+                                    </div>
+                                </ReactBootStrap.Modal.Footer>
+                                        
+                                   
+                                    
+                            </ReactBootStrap.Modal>
                     </div>
 
                 </div>}
@@ -253,33 +283,3 @@ export default function Hero() {
 
 
 
-{/* <div className='flex-left'>
-                <div className='navigation'>
-                    <div className='burger-menu'>
-                        <img  src={hamburger} />
-                        
-                    </div>
-                    
-                </div>
-                <img src={logo}/>
-            </div>
-                        
-                
-            
-
-            <div className='flex-right'>
-                <div className='cart-flex'>
-                <span className='item-output'>
-                    {cartOutput}
-                </span>
-                <img style={{
-                            cursor:'pointer', 
-                            position: 'relative'
-                            }} 
-                            onClick={handleCart} 
-                            src={cart}/>
-                
-                
-                </div>
-                />
-            </div> */}

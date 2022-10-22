@@ -187,6 +187,25 @@ header {
     gap: 10px;
 }
 
+.close-btn button {
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: #fe8019;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.close-btn {
+    display: flex;
+    gap: 50px;
+    
+    
+}
+
 .checkout-Btn button {
     width: 100%;
     max-width: 350px;
