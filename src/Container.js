@@ -1,5 +1,5 @@
 import React , {useState} from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "react-responsive-carousel/lib/styled/carousel.min.css";
 import closeBtn from './images/icon-close.svg';
 import { Carousel } from 'react-responsive-carousel';
 import hamburger from './images/icon-menu.svg';
