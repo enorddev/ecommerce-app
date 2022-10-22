@@ -179,8 +179,23 @@ export default function Hero() {
                                     <ReactBootStrap.Modal.Title>Thank you for your order</ReactBootStrap.Modal.Title>
                                 </ReactBootStrap.Modal.Header>
                                 <ReactBootStrap.Modal.Body>
-                                    Total : <strong>${totalPrice}.00</strong> <br/>
-                                    Order number is: <strong>000-000-001</strong>
+                                
+                    
+                                    <div className='checkout_modal' style={{
+                                                                        display: 'flex', 
+                                                                        flexDirection: 'row', 
+                                                                        alignItems: 'center', 
+                                                                        justifyContent:'space-between'
+                                                                        }}>
+                                        <div>
+                                            Total : <strong>${totalPrice}.00</strong><br/>
+                                            Order number is: <strong>000-000-001</strong>
+                                        </div>
+                                        
+                                        <div><img style={{float: 'right', borderRadius:'8px'}} src="./main3.webp" width="100"/></div>
+                                    </div>
+
+                                    
                                 </ReactBootStrap.Modal.Body>
                                 <ReactBootStrap.Modal.Footer>
                                     <div className='close-btn'>
