@@ -33,7 +33,12 @@ export default function Hero() {
     }
 
     const handleMinus = () => {
-        setOutput(prevState => prevState - 1)
+        if(output <= 0) {
+            output = 0
+        }else {
+            setOutput(output - 1)
+        }
+
     }
 
     const addToCart = () => {
@@ -55,7 +60,7 @@ export default function Hero() {
     }
 
     const [show, setShow] = useState(false);
-    // const [continueShop, setContinueShop] = useState(false)
+   
 
     const handleClose = () => {
         return (
