@@ -128,7 +128,7 @@ header {
     margin-left: 6px;
     margin-top: -9px;
     font-size: 16px;
-    background-color: #fe8019;
+    background-color: #423f42;
     color: #fff;
     z-index: 1;
     width: 30px;
@@ -172,7 +172,7 @@ header {
     height: 60px;
     border-radius: 8px;
     border-color: transparent;
-    background-color: #fe8019;
+    background-color: #423f42;
     color: #fff;
     transition: all 0.2s ease-in-out;
     margin-top: 25px;
@@ -193,7 +193,7 @@ header {
     height: 60px;
     border-radius: 8px;
     border-color: transparent;
-    background-color: #fe8019;
+    background-color: #423f42;
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
@@ -217,7 +217,7 @@ header {
     height: 60px;
     border-radius: 8px;
     border-color: transparent;
-    background-color: #fe8019;
+    background-color: #423f42;
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
@@ -239,7 +239,7 @@ header {
 
 .addBtn button {
     border-color: transparent;
-    background-color: #fe8019;
+    background-color: #423f42;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
@@ -257,13 +257,13 @@ header {
     position: absolute;
     width: 100%;
     max-width: 400px;
-    background-color: #fe8019;
+    background-color: #423f42;
 }
 
 .control-Btn  {
     width: 50px;
     font-size:32px; 
-    color: #fe8019; 
+    color: #423f42; 
     border-radius: 8px;
     cursor: pointer;
 }
