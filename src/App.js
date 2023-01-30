@@ -5,19 +5,19 @@ import Hero from "./Container"
 
 
 export default function App() {
-  
 
- 
+
+
 
 
   return (
     <div>
-        <Hero/>
+      <Hero />
     </div>
-        
+
   )
 }
-      
-      
-      
+
+
+
 
